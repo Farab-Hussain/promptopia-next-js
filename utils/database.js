@@ -11,16 +11,19 @@ export const connectToDB = async () => {
   }
 
   try {
+    console.log('Attempting to connect to MongoDB...');
+    console.log('MONGODB_URI:', process.env.MONGODB_URI); // Make sure to remove this in production
+
     await mongoose.connect(process.env.MONGODB_URI, {
       dbName: "share_prompt",
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    })
+    });
 
     isConnected = true;
-
-    console.log('MongoDB connected')
+    console.log('MongoDB connected successfully');
   } catch (error) {
-    console.log(error);
+    console.error('MongoDB connection error:', error);
+    throw error; // Rethrow the error to be caught in the API route
   }
 }
