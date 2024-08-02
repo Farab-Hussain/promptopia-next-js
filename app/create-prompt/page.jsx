@@ -47,7 +47,6 @@ const CreatePrompt = () => {
       setPost(data);
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);
-      // Handle the error appropriately (e.g., show an error message to the user)
     }
   }
 

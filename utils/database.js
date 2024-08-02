@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-let isConnected = false; // track the connection
+let isConnected = false; 
 
 export const connectToDB = async () => {
   mongoose.set('strictQuery', true);
@@ -12,7 +12,7 @@ export const connectToDB = async () => {
 
   try {
     console.log('Attempting to connect to MongoDB...');
-    console.log('MONGODB_URI:', process.env.MONGODB_URI); // Make sure to remove this in production
+    console.log('MONGODB_URI:', process.env.MONGODB_URI); 
 
     await mongoose.connect(process.env.MONGODB_URI, {
       dbName: "share_prompt",
@@ -24,6 +24,6 @@ export const connectToDB = async () => {
     console.log('MongoDB connected successfully');
   } catch (error) {
     console.error('MongoDB connection error:', error);
-    throw error; // Rethrow the error to be caught in the API route
+    throw error; 
   }
 }

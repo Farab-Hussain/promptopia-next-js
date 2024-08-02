@@ -7,11 +7,11 @@ export const GET = async (request) => {
 
         const prompts = await Prompt.find({}).populate('creator');
 
-        console.log('Fetched prompts:', prompts); // Add this line for debugging
+        console.log('Fetched prompts:', prompts); 
 
         return new Response(JSON.stringify(prompts), { status: 200 })
     } catch (error) {
-        console.error('Error fetching prompts:', error); // Add this line for debugging
+        console.error('Error fetching prompts:', error); 
         return new Response("Failed to fetch prompts", { status: 500 })
     }
 }

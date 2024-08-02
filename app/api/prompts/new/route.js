@@ -22,7 +22,7 @@ export const POST = async (req) => {
         return new Response(JSON.stringify(savedPrompt), {status: 201});
     } catch (error) {
         console.error("Error in /api/prompts/new:", error);
-        // Return detailed error information (remove in production)
+
         return new Response(JSON.stringify({
             message: "Failed to create a new prompt",
             error: error.message,
