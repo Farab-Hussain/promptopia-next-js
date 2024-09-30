@@ -1,4 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 # Prompt Management Website
 
 This is a web application built using **Next.js**, **MongoDB Atlas**, and **Express.js**. It allows users to create, edit, delete, and view prompts. The application also supports user authentication with sign-in and sign-out functionality.
