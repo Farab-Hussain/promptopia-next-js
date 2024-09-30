@@ -1,36 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prompt Management Website
 
-## Getting Started
+This is a web application built using **Next.js**, **MongoDB Atlas**, and **Express.js**. It allows users to create, edit, delete, and view prompts. The application also supports user authentication with sign-in and sign-out functionality.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Create Prompt**: Users can create new prompts.
+- **Edit Prompt**: Users can modify existing prompts.
+- **Delete Prompt**: Users can delete prompts.
+- **View Prompts**: Prompts are listed for users to view.
+- **Authentication**: Sign in and sign out functionality for user accounts.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: React framework for server-side rendering and building fast web applications.
+- **MongoDB Atlas**: Cloud database service to store prompts and user data.
+- **Express.js**: Web framework for building the API and handling backend logic.
+- **Node.js**: JavaScript runtime for server-side operations.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
